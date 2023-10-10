@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNICARE Prediction  API's</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Style for circular images */
+        .circle-img {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="text-center">
+                    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/liver-disease-prediction-using-machine-learning.png" alt="Image 1" class="circle-img">
+                    <h3>Bupa Data</h3>
+                    <a href="{% url 'predict-bupa-data' %}" class="btn btn-primary">Predict Bupa API</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3ktMVQlDei0SAOo6dUvT_00iADXopoAliuAPtwky0Q3CGbBc5vif0-ZY10Dp24BVb44&usqp=CAU" alt="Image 2" class="circle-img">
+                    <h3>Heart Disease</h3>
+                    <a href="{% url 'predict_heart_disease' %}" class="btn btn-primary">Predict Heart Disease API</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="text-center">
+                    <img src="https://sfo2.digitaloceanspaces.com/ch-prod/app/uploads/2021/03/05174229/national-kidney-month.jpg" alt="Image 3" class="circle-img">
+                    <h3>Chronic Kidney Disease</h3>
+                    <a href="{% url 'predict_chronic_kidney_data' %}" class="btn btn-primary">Predict Chronic Kidney Disease API</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="text-center">
+                    <img src="https://www.semana.com/resizer/myYkqUMF4ALvGeNyXkSBZpIa3y4=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/TGSRFRDSGFHNNHSIORXUALONLQ.jpg" alt="Image 4" class="circle-img">
+                    <h3>Diabetics</h3>
+                    <a href="{% url 'predict_diabetics_data' %}" class="btn btn-primary">Predict Diabetics API</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS and jQuery links (if needed) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
